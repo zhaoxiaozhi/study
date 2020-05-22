@@ -1,4 +1,4 @@
-package com.study.arethmetic;
+package com.study.arethmetic.javaguide;
 
 import java.util.Arrays;
 
