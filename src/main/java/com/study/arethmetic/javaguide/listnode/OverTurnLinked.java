@@ -1,4 +1,4 @@
-package com.study.arethmetic.javaguide;
+package com.study.arethmetic.javaguide.listnode;
 
 import com.study.arethmetic.javaguide.util.ListNode;
 

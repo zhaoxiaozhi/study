@@ -1,4 +1,4 @@
-package com.study.arethmetic.javaguide;
+package com.study.arethmetic.javaguide.str;
 
 public class KMP {
 
