@@ -1,20 +1,20 @@
 package com.study.thread.pool;
 
+import java.math.BigInteger;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 public class Test {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
+            List<String> list = List.of("Apple", "Banana", "Blackberry", "Coconut", "Avocado", "Cherry", "Apricots");
 
-        log("start main...");
-        new Thread(() -> {
-            log("run task...");
-        }).start();
-        new Thread(() -> {
-            log("print...");
-        }).start();
-        log("end main.");
-
-    }
-    static void log(String s){
-        System.out.println(Thread.currentThread().getName() + ": " + s);
-    }
+            Map<String, List<String>> groups = list.stream().
+                    collect(Collectors.groupingBy(s -> s.substring(0,1), Collectors.toList()));
+            System.out.println(groups);
+        }
 }

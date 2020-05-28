@@ -14,7 +14,7 @@ public class ForkJoinDemo {
 
     public static void main(String[] args) throws Exception{
 
-// 创建2000个随机数组成的数组:
+        // 创建2000个随机数组成的数组:
         long[] array = new long[2000];
         long expectedSum = 0;
         for (int i = 0; i < array.length; i++) {
