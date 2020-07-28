@@ -1,6 +1,6 @@
 package com.study.arethmetic.other.tree;
 
-public class AverageOfLevels {
+public class AverageOfLevelsTree {
 
     class TreeNode{
         int val;
